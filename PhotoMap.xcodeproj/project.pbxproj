@@ -37,8 +37,19 @@
 		53D2E36F19A2A61B000E7023 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D2E36E19A2A61B000E7023 /* PhotosViewController.m */; };
 		53DF9986199543D000D6838C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53DF9985199543D000D6838C /* Images.xcassets */; };
 		53F2A6B1199A78DC00AA02B7 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F2A6AF199A78DC00AA02B7 /* Storyboard.storyboard */; };
+		65EFDFF21BF1DB5500111708 /* PhotoMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EFDFF11BF1DB5500111708 /* PhotoMapTests.m */; };
 		D900C2861395D968002E66A3 /* LoadingStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = D900C2851395D968002E66A3 /* LoadingStatus.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65EFDFF41BF1DB5500111708 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 433F55811391F151004304E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 433F55891391F151004304E6;
+			remoteInfo = PhotoMap;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		A4677CB5139829E9003451F8 /* Copy Files */ = {
@@ -107,6 +118,9 @@
 		53D2E36E19A2A61B000E7023 /* PhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
 		53DF9985199543D000D6838C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		53F2A6B0199A78DC00AA02B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = PhotoMap/en.lproj/Storyboard.storyboard; sourceTree = "<group>"; };
+		65EFDFEF1BF1DB5500111708 /* PhotoMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65EFDFF11BF1DB5500111708 /* PhotoMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoMapTests.m; sourceTree = "<group>"; };
+		65EFDFF31BF1DB5500111708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D900C2841395D968002E66A3 /* LoadingStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingStatus.h; sourceTree = "<group>"; };
 		D900C2851395D968002E66A3 /* LoadingStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingStatus.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +140,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		65EFDFEC1BF1DB5500111708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -135,6 +156,7 @@
 				53147D9219A3DA71004089A5 /* ReadMe.txt */,
 				433F55941391F151004304E6 /* PhotoMap */,
 				433F55951391F151004304E6 /* Supporting Files */,
+				65EFDFF01BF1DB5500111708 /* PhotoMapTests */,
 				433F558D1391F151004304E6 /* Frameworks */,
 				433F558B1391F151004304E6 /* Products */,
 			);
@@ -144,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				433F558A1391F151004304E6 /* PhotoMap.app */,
+				65EFDFEF1BF1DB5500111708 /* PhotoMapTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -226,6 +249,15 @@
 			path = LargePhotoSet;
 			sourceTree = "<group>";
 		};
+		65EFDFF01BF1DB5500111708 /* PhotoMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				65EFDFF11BF1DB5500111708 /* PhotoMapTests.m */,
+				65EFDFF31BF1DB5500111708 /* Info.plist */,
+			);
+			path = PhotoMapTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -247,6 +279,24 @@
 			productReference = 433F558A1391F151004304E6 /* PhotoMap.app */;
 			productType = "com.apple.product-type.application";
 		};
+		65EFDFEE1BF1DB5500111708 /* PhotoMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65EFDFF81BF1DB5500111708 /* Build configuration list for PBXNativeTarget "PhotoMapTests" */;
+			buildPhases = (
+				65EFDFEB1BF1DB5500111708 /* Sources */,
+				65EFDFEC1BF1DB5500111708 /* Frameworks */,
+				65EFDFED1BF1DB5500111708 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65EFDFF51BF1DB5500111708 /* PBXTargetDependency */,
+			);
+			name = PhotoMapTests;
+			productName = PhotoMapTests;
+			productReference = 65EFDFEF1BF1DB5500111708 /* PhotoMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -255,6 +305,12 @@
 			attributes = {
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Apple, Inc.";
+				TargetAttributes = {
+					65EFDFEE1BF1DB5500111708 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 433F55891391F151004304E6;
+					};
+				};
 			};
 			buildConfigurationList = 433F55841391F151004304E6 /* Build configuration list for PBXProject "PhotoMap" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -269,6 +325,7 @@
 			projectRoot = "";
 			targets = (
 				433F55891391F151004304E6 /* PhotoMap */,
+				65EFDFEE1BF1DB5500111708 /* PhotoMapTests */,
 			);
 		};
 /* End PBXProject section */
@@ -281,6 +338,13 @@
 				433F55991391F151004304E6 /* InfoPlist.strings in Resources */,
 				53F2A6B1199A78DC00AA02B7 /* Storyboard.storyboard in Resources */,
 				53DF9986199543D000D6838C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65EFDFED1BF1DB5500111708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +366,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		65EFDFEB1BF1DB5500111708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65EFDFF21BF1DB5500111708 /* PhotoMapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65EFDFF51BF1DB5500111708 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 433F55891391F151004304E6 /* PhotoMap */;
+			targetProxy = 65EFDFF41BF1DB5500111708 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		433F55971391F151004304E6 /* InfoPlist.strings */ = {
@@ -420,6 +500,68 @@
 			};
 			name = Release;
 		};
+		65EFDFF61BF1DB5500111708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = PhotoMapTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.PhotoMapTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoMap.app/PhotoMap";
+			};
+			name = Debug;
+		};
+		65EFDFF71BF1DB5500111708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = PhotoMapTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.PhotoMapTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoMap.app/PhotoMap";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -440,6 +582,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		65EFDFF81BF1DB5500111708 /* Build configuration list for PBXNativeTarget "PhotoMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65EFDFF61BF1DB5500111708 /* Debug */,
+				65EFDFF71BF1DB5500111708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
